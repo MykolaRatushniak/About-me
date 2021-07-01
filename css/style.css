@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&family=Roboto&family=Source+Sans+Pro&display=swap');
+
+* {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #C9F4C4;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Bree Serif, Lato, Roboto, Source Sans Pro, Open Sans,;
+  font-weight: lighter;
+}
+
+/*========================================================*/
+
+/*Header*/
+
+header {
+  	width: 100%;
+	background-image: url(../images/pict1.png);
+  	background-blend-mode: multiply;
+  	background-color: #068556;
+  	background-size: cover;
+  	margin: 0;
+	padding: 0;
+	display: block;
+	cursor: default;
+	float: left;
+}
+
+header #title {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding: 0;
+	font-size: 2em;
+	cursor: default;
+	color: #D5C658;
+	text-align: center;
+	float: left;
+}
+
+/*========================================================*/
+
+/*Main*/
+
+#main-header {
+	width: 50%;	
+	margin-left: 24.5%;
+	margin-right: 24.5%;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	padding: 0;
+	font-size: 1.4em;
+	text-align: center;
+	display: block;
+	color: #F2F4B0;
+}
+
+/*========================================================*/
+#about {
+	width: 95%;	
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 85px;
+	margin-bottom: 85px;
+	font-size: 1.1em;
+	text-align: center;
+	display: block;
+	color: #F2F4B0;
+}
+
+#about a {
+	color: #F2F4B0;
+	text-decoration: none;
+
+}
+
+/*========================================================*/
+
+/*Nav*/
+
+#pages {
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: #C9F4C4;
+	margin: 0;
+	padding: 40px 0% 50px 0%;
+	text-align: center;
+	z-index: 4000;
+}
+
+#pages a {
+	color: #068556;
+	font-size: 2.0em;
+	text-decoration: none;
+	border: 0px solid #068556;
+	border-radius: 15px;
+	padding: 4px;
+}
+
+#pages a:not(:last-child) {
+  margin-right: 7%;
+}
+
+#pages a:hover {
+	background-color: #068556;
+	color: #F2F4B0;
+	transition: all 0.5s ease;
+}
+
+/*for JS, img will visible when page down*/
+.scrollpage {
+	display: none;
+}
+
+
+#page-up {
+	width: 5%;
+	position: fixed;
+	left: 90%;
+	top: 80%;
+	z-index: 5000;
+	cursor: pointer;
+	opacity: 0.3;
+	transition: all 1s ease-in;
+}
+
+#page-up:hover {
+	opacity: 0.8;
+	transition: all 0.5s ease-in;
+}
+
+/*========================================================*/
+
+/*skills*/
+
+#skills {
+	width: 100%;
+	float: left;
+	background-color: #F2F4B0;
+} 
+
+.skills .title-my-skills {
+	margin: 0px;
+	padding-top: 75px;
+	padding-bottom: 50px;
+	padding-left: 170px;
+	width: 100%;
+	text-align: left;
+	font-size: 2.8em;
+	font-weight: 800;
+	color: #103509;
+	float: left; 
+}
+
+#skills .skills .my-skills {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	line-height: 2em;
+	font-size: 1.5em;
+	font-weight: 900;
+}
+
+ .skills ul {
+ 	list-style-image: url(../images/listbrain.png);
+ }
+
+ #skills progress {
+ 	width: 90%;
+ 	height: 30px;
+ }
+
+.skills {
+	width: 50%;
+	float: left;
+}
+
+#skillsimg {
+	width: 45%;
+	display: inline-block;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+/*==================================================================*/
+
+/*Achievement*/
+
+#achievement {
+	display: inline-block;
+}
+
+#achievement h2 {
+	display: block;
+	width: 58%;
+	float: right;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 2.8em;
+	font-weight: 800;
+	color: #103509;
+}
+
+#achievement .story {
+	display: block;
+	width: 54%;
+	float: right;
+	line-height: 2em;
+	font-size: 1.5em;
+	font-weight: 500;
+	margin-left: 2%;
+	margin-right: 2%;
+	text-indent: 50px;
+	
+
+}
+
+#slider {
+	width: 40%;
+	float: left; 
+}
+/*===================================================================
+========================slider=========================================
+======================================================================*/
+
+/*slider copyring from w3school*/
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*========================================================================*/
+
+/*plans*/
+
+#plans {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-top: 50px;
+	padding-top: 50px;
+	background-image: url(../images/plans21-img.png);
+	background-blend-mode: multiply;
+  	background-color: #046D41;
+  	background-size: cover;
+}
+
+#plans h2 {
+	font-size: 2.8em;
+	font-weight: 900;
+	color: #F0F3D9; 
+	text-align: center;
+}
+
+#plans table {
+	width: 100%;
+	float: left;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	color: #F0F3D9;
+}
+
+#plans table .table1 {
+	width: 28%;
+	padding-left: 2%;
+	text-align: left;
+	font-size: 2em;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#plans table .table2 {
+	width: 68%;
+	text-align: left;
+	font-size: 1.4em;
+}
+
+/*========================================================*/
+
+/*Contact Me*/
+
+#message {
+	display: inline-block;
+	width: 100%;
+	height: 250px;
+}
+
+#message button {
+	width: 30%;
+	height: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 7%;
+	border: 2px solid #CD7B00;
+	border-radius: 1em;
+	background-color: #FF9800;
+	color: #004F65;
+	font-size: 2em;
+	font-weight: 500;
+}
+
+#message button:hover {
+	background-color: #f5c174;
+	cursor: pointer;
+	transition: all 0.03s ease;
+}
+
+/*=========================================================================*/
+
+/*Copyright*/
+
+footer {
+	background-color: inherit;
+}
+
+#copyright {
+	width: 100%;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+	z-index: 1000;
+}
+
+#copyright a {
+	width: 100%;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*header social networks box*/
+#social-networks {
+	width: 100px;
+	height: 60px;
+	position: absolute;
+	top: 30px;
+	right: 5px;
+}
+
+#social-networks img {
+	position: relative;
+	width: 52px;
+	height: 52px;
+	margin-bottom: 20px;
+	opacity: 0.6;
+	transition: all 1.5s ease-in;
+}
+
+#social-networks img:hover {
+	opacity: 1;
+	transition: all 0.7s ease-in;
+}
